@@ -25,6 +25,7 @@
 <ol>
     <li>Clone the repository</li>
     <li>Open the solution in Visual Studio</li>
+    <li>Set the Release x64 configuration</li>    
     <li>Build the solution (ensure both C# and ASM projects are built)</li>
     <li>Add your path to DLL files in <code>Program.cs</code>. Just change "YOUR_PATH" for two functions</li>
     <li>Run the application</li>
