@@ -21,7 +21,7 @@ namespace BoxBlurApp
         /// Imported assembly procedure for calculating pixel sums
         /// </summary>
         [SecurityCritical]
-        [DllImport(@"C:\Users\jakub\source\repos\BoxBlurApp\x64\Release\BoxBlurASM.dll", CallingConvention = CallingConvention.Cdecl)]
+        [DllImport(@"YOUR_PATH\BoxBlurApp\x64\Release\BoxBlurASM.dll", CallingConvention = CallingConvention.Cdecl)]
         private static extern unsafe void CalculatePixelSumsASM(
             byte* rgbValues,     // Pointer to image buffer
             int width,           // Image width
@@ -41,7 +41,7 @@ namespace BoxBlurApp
         /// Imported C# method for calculating pixel sums
         /// </summary>
         [SecurityCritical]
-        [DllImport(@"C:\Users\jakub\source\repos\BoxBlurApp\BoxBlurCS\bin\x64\Release\BoxBlurCS.dll", CallingConvention = CallingConvention.StdCall)]
+        [DllImport(@"YOUR_PATH\BoxBlurApp\BoxBlurCS\bin\x64\Release\BoxBlurCS.dll", CallingConvention = CallingConvention.StdCall)]
         private static extern unsafe void CalculatePixelSumsCS(
             byte* rgbValues,     // Pointer to image buffer
             int width,           // Image width
